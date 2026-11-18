@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box src="/image/BigBees.jpg" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sky color="#eed202"></a-sky>
+      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky> -->
+      <a-assets>
+    <img id="bee-image" src="image\MCBees.png">
+  </a-assets>
+
+  <!-- Using the asset management system. -->
+  <a-image src="#bee-image"></a-image>
+  <a-image src="#bee-image" position="1 -3 -10" width="10" height="10" rotation="0 0 0"></a-image>
+  <a-image src="/image/BackgroundBess.jpg" position="1 -3 5" width="10" height="10" rotation="0 0 0"></a-image>
+  <a-image src="/image/catoonBees.png" position="1 10 0" width="10" height="10" rotation="90 0 0"></a-image>
+  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+  <a-image src="image\CuteBees.png" position="1 -8 1" width="25" height="25" rotation="90 0 0"></a-image>
+    </a-scene>
+  </body>
+</html>
